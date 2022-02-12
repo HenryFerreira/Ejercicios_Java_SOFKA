@@ -1,3 +1,5 @@
+package ejercicios_1_al_14;
+
 import java.util.Scanner;
 
 public class remplazarTexto {
