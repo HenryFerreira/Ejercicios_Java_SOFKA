@@ -21,8 +21,23 @@ public class pedirNumero {
         }while(!flag);//Mientras la bandera sea diferente de false se ejecuta el doWhile
     }
 
+    public static void pedirNumerosAvanzarHastaElMil(){
+        int num;
+        System.out.println("Ingrese un número: ");
+        num = scanner.nextInt();
+
+        System.out.println("Desde el [" + num + "] hasta el [1000]: ");
+        for(; num <= 1000; num+=2){
+            if(num%50 == 0){
+                System.out.println();
+            }
+            System.out.print("["+ num +"]");
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("|Bienvenido al Programa - Pedir Numeros|");
-        pedirNumeroMayorACero();
+        //pedirNumeroMayorACero();
+        pedirNumerosAvanzarHastaElMil();
     }
 }
