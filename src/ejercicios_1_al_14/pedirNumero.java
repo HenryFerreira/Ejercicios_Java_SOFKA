@@ -37,9 +37,12 @@ public class pedirNumero {
         }
     }
 
-    public static void main(String[] args) {
+    public void iniciarMayorACero() {
         System.out.println("|Bienvenido al Programa - Pedir Numeros|");
-        //pedirNumeroMayorACero();
+        pedirNumeroMayorACero();
+    }
+    public void iniciarHastaMil() {
+        System.out.println("|Bienvenido al Programa - Pedir Numeros|");
         pedirNumerosAvanzarHastaElMil();
     }
 }

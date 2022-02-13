@@ -1,10 +1,11 @@
 package ejercicio_17;
 
 public class Lavadora extends Electrodomestico {
-    private float carga = 5;
+    private float carga;
 
-    Lavadora() {
-    }//Constructor por Defecto
+    Lavadora() {//Constructor por Defecto
+        this.carga = 5;
+    }
 
     public Lavadora(float precioBase, float peso) {
         super(precioBase, peso);

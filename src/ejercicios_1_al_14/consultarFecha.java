@@ -13,7 +13,7 @@ public class consultarFecha {
         System.out.println(fechaHoraActual.format(formato));
     }
 
-    public static void main(String[] args) {
+    public void iniciar() {
         consultarFechaHoraActual();
     }
 }

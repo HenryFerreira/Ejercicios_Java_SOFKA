@@ -2,12 +2,16 @@ package ejercicio_17;
 
 public class Electrodomestico {
     //Atributos
-    private float precioBase = 100;
-    private String color = "Blanco";
-    private char consumoEnergetico = 'F';
-    private float peso = 5;
+    private float precioBase;
+    private String color;
+    private char consumoEnergetico;
+    private float peso;
 
-    public Electrodomestico() {
+    public Electrodomestico() {//Constructor por defecto
+        this.precioBase = 100;
+        this.color = "Blanco";
+        this.consumoEnergetico = 'F';
+        this.peso = 5;
     }
 
     public Electrodomestico(float precioBase, float peso) {

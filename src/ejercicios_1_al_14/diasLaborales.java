@@ -41,7 +41,7 @@ public class diasLaborales {
         }
     }
 
-    public static void main(String[] args) {
+    public void iniciar() {
         String dia;
         System.out.println("|Bienvenido al Programa - Día de la Semana|");
         System.out.println("Digite un día de la semana [Ejemplo: Lunes] :");

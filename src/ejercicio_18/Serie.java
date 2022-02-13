@@ -1,13 +1,19 @@
 package ejercicio_18;
 
 public class Serie implements Entregable {
-    private String titulo = "";
-    private int numeroDeTemporadas = 3;
-    private boolean entregado = false;
-    private String genero = "";
-    private String creador = "";
+    private String titulo;
+    private int numeroDeTemporadas;
+    private boolean entregado;
+    private String genero;
+    private String creador;
 
-    Serie(){}//Constructor por Defecto
+    Serie(){//Constructor por Defecto
+        this.titulo = "";
+        this.numeroDeTemporadas = 3;
+        this.entregado = false;
+        this.genero = "";
+        this.creador = "";
+    }
 
     public Serie(String titulo, String creador) {
         this.titulo = titulo;

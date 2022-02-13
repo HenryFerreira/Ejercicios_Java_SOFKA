@@ -11,13 +11,11 @@ public class calcularAreas {
         System.out.println("El area del Circulo con radio " + radio +" es de: [" + resultado +"]");
     }
 
-    public static void main(String[] args) {
+    public void iniciar() {
         int radio;
         System.out.println("|Bienvenido al Programa|\n");
         System.out.println("Ingrese el Radio del circulo: ");
         radio = scanner.nextInt();
-
         areaDelCirculo(radio);
-
     }
 }

@@ -31,7 +31,7 @@ public class vocales {
         System.out.println("cantidad de O en la frase: [" + cant_O + "]");
     }
 
-    public static void main(String[] args) {
+    public void iniciar() {
         String texto;
         System.out.println("|Bienvenido al Programa - Vocales|");
         System.out.println("Ingrese una frase: ");

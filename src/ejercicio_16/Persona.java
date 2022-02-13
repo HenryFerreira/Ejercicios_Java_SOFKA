@@ -4,15 +4,20 @@ import java.util.Random;
 
 public class Persona {
     //Atributos
-    private String nombre = "";
-    private int edad = 0;
+    private String nombre;
+    private int edad;
     private String DNI;
-    private char sexo = 'H';
-    private float peso = 0;
-    private float altura = 0;
+    private char sexo;
+    private float peso;
+    private float altura;
 
     public Persona(){//Constructor por Defecto
-
+        this.nombre = "";
+        this.edad = 0;
+        this.DNI = generaDNI();
+        this.sexo = 'H';
+        this.peso = 0;
+        this.altura = 0;
     }
 
     public Persona(String nombre, int edad, char sexo, float peso, float altura) {

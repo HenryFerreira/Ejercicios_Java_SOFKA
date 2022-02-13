@@ -2,13 +2,19 @@ package ejercicio_18;
 
 public class Videojuegos implements Entregable{
     //Sus atributos son titulo, horas estimadas, entregado, genero y compañia.
-    private String titulo = "";
-    private int horasEstimadas = 10;
-    private boolean entregado = false;
-    private String genero = "";
-    private String compannia = "";
+    private String titulo;
+    private int horasEstimadas;
+    private boolean entregado;
+    private String genero;
+    private String compannia;
 
-    Videojuegos(){}//Constructor por Defecto
+    Videojuegos(){//Constructor por Defecto
+        this.titulo = "";
+        this.horasEstimadas = 10;
+        this.entregado = false;
+        this.genero = "";
+        this.compannia = "";
+    }
 
     public Videojuegos(String titulo, int horasEstimadas) {
         this.titulo = titulo;

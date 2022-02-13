@@ -18,7 +18,7 @@ public class remplazarTexto {
         System.out.println(texto );
     }
 
-    public static void main(String[] args) {
+    public void iniciar() {
         String extra;
         System.out.println("|Bienvenido al Programa - Cambiar Frase|");
         System.out.println("Digite algun comentario: ");

@@ -2,10 +2,13 @@ package ejercicio_17;
 
 public class Television extends Electrodomestico {
     //Atributos
-    private float resolucion = 20;
-    private boolean sintonizadoTDT = false;
+    private float resolucion;
+    private boolean sintonizadoTDT;
 
-    Television(){}//Constructor por defecto
+    Television(){//Constructor por defecto
+        this.resolucion = 20;
+        this.sintonizadoTDT = false;
+    }
 
     public Television(float precioBase, float peso) {
         super(precioBase, peso);

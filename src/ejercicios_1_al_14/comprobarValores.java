@@ -15,7 +15,7 @@ public class comprobarValores {
         }
     }
 
-    public static void main(String[] args) {
+    public void iniciar() {
         int num1, num2;
         System.out.println("|Bienvenido al Programa|\n");
         System.out.println("Ingrese el primero número: ");

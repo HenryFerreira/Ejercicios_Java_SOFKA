@@ -79,7 +79,7 @@ public class mostrarNumeros {
     }
 
 
-    public static void main(String[] args) {
+    public void iniciar() {
         System.out.println("|Buenvenido al Programa - Numeros PARES e IMPARES del 1 al 100|");
         numerosParesImparesWhile();
         numerosParesImparesFor();

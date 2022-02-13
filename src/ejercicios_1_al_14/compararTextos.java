@@ -16,7 +16,7 @@ public class compararTextos {
         }
     }
 
-    public static void main(String[] args) {
+    public void iniciar() {
         String tex_1, tex_2;
         System.out.println("|Bienvenido al Programa - Comparar Palabras|");
         System.out.print("Digite la primera palabra: ");

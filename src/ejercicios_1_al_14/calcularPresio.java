@@ -12,7 +12,7 @@ public class calcularPresio {
         System.out.println("El precio del producto es de $" + total);
     }
 
-    public static void main(String[] args) {
+    public void iniciar() {
         float precio;
         System.out.println("|Bienvenido al Programa - Calcular Presio con IVA|\n");
         System.out.print("Ingrese el precio del producto: ");
