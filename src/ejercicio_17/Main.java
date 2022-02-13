@@ -14,10 +14,11 @@ public class Main {
                 new Television(),
                 new Lavadora()
         };
-
+        float precioTotal = 0;
         for(int i =0; i< electrodomesticos.length;i++){
-            System.out.println("[" + electrodomesticos[i].precioFinal() + "]");
+            System.out.println("[Precio final : €" + electrodomesticos[i].precioFinal() + "]");
+            precioTotal += electrodomesticos[i].precioFinal();
         }
-
+        System.out.println("[Precio total de los Electrodomésticos: €" + precioTotal + "]");
     }
 }

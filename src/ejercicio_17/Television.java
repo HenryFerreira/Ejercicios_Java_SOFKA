@@ -23,12 +23,9 @@ public class Television extends Electrodomestico {
         if(this.resolucion > 40){
             float extra = (getPrecioBase() * 0.30F);
             precioBase += extra;
-
-            modificarPrecio(precioBase);
         }
         if(sintonizadoTDT){
             precioBase += 50;
-            modificarPrecio(precioBase);
         }
         return precioBase;
     }

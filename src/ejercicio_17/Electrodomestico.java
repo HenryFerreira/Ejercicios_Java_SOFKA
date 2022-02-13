@@ -88,9 +88,6 @@ public class Electrodomestico {
         return this.precioBase;
     }
 
-    public void modificarPrecio(float extra) {
-        this.precioBase += extra;
-    }
 
     public float getPrecioBase() {
         return precioBase;
