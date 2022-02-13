@@ -11,7 +11,7 @@ public class Persona {
     private float peso;
     private float altura;
 
-    public Persona(){//Constructor por Defecto
+    public Persona() {//Constructor por Defecto
         this.nombre = "";
         this.edad = 0;
         this.DNI = generaDNI();
@@ -29,42 +29,32 @@ public class Persona {
         this.altura = altura;
     }
 
-    public int calcularIMC(){
-        /* * calcularIMC(): calculara si la persona está en su peso ideal (peso en kg/(altura^2  en m)),
-        * si esta fórmula devuelve un valor menor que 20, la función devuelve un -1, si devuelve un número
-        * entre 20 y 25 (incluidos), significa que está por debajo de su peso ideal la función devuelve un 0
-        * y si devuelve un valor mayor que 25 significa que tiene sobrepeso, la función devuelve un 1.
-        * Te recomiendo que uses constantes para devolver estos valores.
-        * */
-        float imc = (float) (this.peso / (Math.pow(this.altura,2)));
-        if(imc < 20){
+    public int calcularIMC() {
+        float imc = (float) (this.peso / (Math.pow(this.altura, 2)));
+        if (imc < 20) {
             return -1;
-        }else if(imc >= 20 && imc <=25){
+        } else if (imc >= 20 && imc <= 25) {
             return 0;
         } else {
             return 1;
         }
     }
 
-    public boolean esMayorDeEdad(){
-        //esMayorDeEdad(): indica si es mayor de edad, devuelve un booleano.
-        if(this.edad >= 18){
+    public boolean esMayorDeEdad() {
+        if (this.edad >= 18) {
             return true;
         } else {
             return false;
         }
     }
 
-    public void comprobarSexo(){
-        //comprobarSexo(char sexo): comprueba que el sexo introducido es correcto. Si no es correcto,
-        //sera H. No será visible al exterior.
-        if(this.sexo != 'H' || this.sexo != 'M'){
+    public void comprobarSexo() {
+        if (this.sexo != 'H' || this.sexo != 'M') {
             setSexo('H');
         }
     }
 
-    public String toString(){
-        //toString(): devuelve toda la información del objeto.
+    public String toString() {
         return "\n[Nombre: " + this.nombre + "]" +
                 "\n[Edad: " + this.edad + "]" +
                 "\n[DNI: " + this.DNI + "]" +
@@ -73,7 +63,7 @@ public class Persona {
                 "\n[Altura: " + this.altura + "]";
     }
 
-    public String generaDNI(){
+    public String generaDNI() {
         int dni_num;
         long max = 99999999;
         long min = 10000000;
@@ -81,10 +71,10 @@ public class Persona {
         char dni_char;
         Random random = new Random();
 
-        dni_num = (int) (min+Math.random() * max);
+        dni_num = (int) (min + Math.random() * max);
 
-        String caracteres="TRWAGMYFPDXBNJZSQVHLCKE";
-        int resto = dni_num%23;
+        String caracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
+        int resto = dni_num % 23;
         dni_char = caracteres.charAt(resto);
 
         dni = Integer.toString(dni_num) + dni_char;

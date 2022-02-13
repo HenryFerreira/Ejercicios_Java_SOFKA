@@ -3,7 +3,7 @@ package ejercicio_18;
 public class Main {
     public static void main(String[] args) {
         Serie[] series = {
-                new Serie("Juego de tronos", 8, "Fantasía Medieval","George R.R. Martin"),
+                new Serie("Juego de tronos", 8, "Fantasía Medieval", "George R.R. Martin"),
                 new Serie("Konosuba", "Natsume Akatsuki"),
                 new Serie(),
                 new Serie(),
@@ -11,9 +11,9 @@ public class Main {
         };
 
         Videojuegos[] videojuegos = {
-                new Videojuegos("Dark Souls",26),
-                new Videojuegos("Dark Souls II", 36 ),
-                new Videojuegos("Dark Souls III",30),
+                new Videojuegos("Dark Souls", 26),
+                new Videojuegos("Dark Souls II", 36),
+                new Videojuegos("Dark Souls III", 30),
                 new Videojuegos(),
                 new Videojuegos()
         };
@@ -27,26 +27,26 @@ public class Main {
         Videojuegos juego = new Videojuegos();
         Serie serie = new Serie();
 
-        for(int i=0; i<series.length;i++){
-            if(series[i].isEntregado()){
+        for (int i = 0; i < series.length; i++) {
+            if (series[i].isEntregado()) {
                 cantSeriesEntregadas++;
             }
         }
 
-        for(int i=0; i<videojuegos.length;i++){
-            if(videojuegos[i].isEntregado()){
+        for (int i = 0; i < videojuegos.length; i++) {
+            if (videojuegos[i].isEntregado()) {
                 cantVideojuegosEntregados++;
             }
         }
 
-        for(int i=0; i<videojuegos.length;i++){
-            if(juego.getHorasEstimadas() < videojuegos[i].getHorasEstimadas()){
+        for (int i = 0; i < videojuegos.length; i++) {
+            if (juego.getHorasEstimadas() < videojuegos[i].getHorasEstimadas()) {
                 juego = videojuegos[i];
             }
         }
 
-        for(int i=0; i<series.length;i++){
-            if(serie.getNumeroDeTemporadas() < series[i].getNumeroDeTemporadas()){
+        for (int i = 0; i < series.length; i++) {
+            if (serie.getNumeroDeTemporadas() < series[i].getNumeroDeTemporadas()) {
                 serie = series[i];
             }
         }
@@ -57,11 +57,11 @@ public class Main {
         System.out.println("[El videojuego con más horas estimadas es: " + juego.getTitulo() + " con " +
                 juego.getHorasEstimadas() + " horas]");
 
-        for(int i=0; i<videojuegos.length;i++){
+        for (int i = 0; i < videojuegos.length; i++) {
             System.out.println(videojuegos[i].toString());
         }
 
-        for(int i=0; i<series.length;i++){
+        for (int i = 0; i < series.length; i++) {
             System.out.println(series[i].toString());
         }
     }

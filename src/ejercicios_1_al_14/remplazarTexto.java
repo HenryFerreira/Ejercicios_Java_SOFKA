@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class remplazarTexto {
     static Scanner scanner = new Scanner(System.in);
 
-    public static void remplazarCaracter(String extra) {//Remplaza el caracter "a" por el caracter "e"
+    public void remplazarCaracter(String extra) {//Remplaza el caracter "a" por el caracter "e"
         String texto = "La sonrisa sera la mejor arma contra la tristeza";
         texto = texto.replace("a", "e");
         extra = extra.replace("e", "a");
@@ -13,9 +13,9 @@ public class remplazarTexto {
         System.out.println(texto + " " + extra);
     }
 
-    public static void quitarEspacios(String texto) {//Quita los espacios del string
+    public void quitarEspacios(String texto) {//Quita los espacios del string
         texto = texto.replace(" ", "");
-        System.out.println(texto );
+        System.out.println(texto);
     }
 
     public void iniciar() {

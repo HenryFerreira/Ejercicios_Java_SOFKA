@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class diasLaborales {
     static Scanner scanner = new Scanner(System.in);
 
-    public static void pedirDiaDeLaSemana(String dia) {
+    public void pedirDiaDeLaSemana(String dia) {
         switch (dia.toUpperCase()) {
             case "LUNES": {
                 System.out.println("Ingreso el día LUNES este es un día LABORAL");

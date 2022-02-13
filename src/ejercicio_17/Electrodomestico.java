@@ -27,10 +27,6 @@ public class Electrodomestico {
     }
 
     public void comprobarConsumoEnergetico(char letra) {
-        /*
-         * comprobarConsumoEnergetico(char letra): comprueba que la letra es correcta,
-         * sino es correcta usara la letra por defecto. Se invocará al crear el objeto y no será visible.
-         * */
         boolean flag = false;
         char[] valores = {'A', 'B', 'C', 'D', 'E', 'F'};
         for (int i = 0; i < valores.length; i++) {
@@ -44,10 +40,6 @@ public class Electrodomestico {
     }
 
     public void comprobarColor(String color) {
-        /*
-         * comprobarColor(String color): comprueba que el color es correcto, sino lo es usa el color por defecto.
-         * Se invocará al crear el objeto y no será visible.
-         * */
         boolean flag = false;
         String[] colores = {"blanco", "negro", "rojo", "azul", "gris"};
         for (int i = 0; i < colores.length; i++) {
@@ -61,10 +53,6 @@ public class Electrodomestico {
     }
 
     public float precioFinal() {
-        /*
-         * precioFinal(): según el consumo energético, aumentara su precio, y según su tamaño, también.
-         * Esta es la lista de precios:
-         * */
         if (this.consumoEnergetico == 'A') {
             this.precioBase += 100;
         } else if (this.consumoEnergetico == 'B') {
@@ -91,7 +79,6 @@ public class Electrodomestico {
 
         return this.precioBase;
     }
-
 
     public float getPrecioBase() {
         return precioBase;

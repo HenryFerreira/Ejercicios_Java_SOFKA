@@ -7,7 +7,7 @@ public class Serie implements Entregable {
     private String genero;
     private String creador;
 
-    Serie(){//Constructor por Defecto
+    Serie() {//Constructor por Defecto
         this.titulo = "";
         this.numeroDeTemporadas = 3;
         this.entregado = false;
@@ -60,7 +60,7 @@ public class Serie implements Entregable {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "\n[Titulo: " + this.titulo + "]" +
                 "\n[Número de temporadas: " + this.numeroDeTemporadas + "]" +
                 "\n[Entregado?: " + this.entregado + "]" +
@@ -85,9 +85,9 @@ public class Serie implements Entregable {
 
     @Override
     public boolean compareTo(Object a) {
-        if(a instanceof Serie){
+        if (a instanceof Serie) {
             Serie aComparar = (Serie) a;
-            if(this.numeroDeTemporadas == ( aComparar.numeroDeTemporadas)){
+            if (this.numeroDeTemporadas == (aComparar.numeroDeTemporadas)) {
                 return true;
             }
         }

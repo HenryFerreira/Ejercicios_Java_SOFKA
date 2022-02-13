@@ -8,7 +8,8 @@ import java.util.Scanner;
 
 public class compararTextos {
     static Scanner scanner = new Scanner(System.in);
-    public static void verificarIgualdadDeStrings(String tex_1, String tex_2) {
+
+    public void verificarIgualdadDeStrings(String tex_1, String tex_2) {
         if (tex_1.equals(tex_2)) {
             System.out.println("Las palabras son IGUALES: [" + tex_1 + "]");
         } else {

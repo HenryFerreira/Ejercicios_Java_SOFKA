@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class calcularPresio {
     static Scanner scanner = new Scanner(System.in);
 
-    public static void presioConIVA(float precio){
+    public void presioConIVA(float precio) {
         float iva = 0.21F;
         float total = precio + (precio * iva);
 

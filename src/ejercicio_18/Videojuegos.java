@@ -1,14 +1,13 @@
 package ejercicio_18;
 
-public class Videojuegos implements Entregable{
-    //Sus atributos son titulo, horas estimadas, entregado, genero y compañia.
+public class Videojuegos implements Entregable {
     private String titulo;
     private int horasEstimadas;
     private boolean entregado;
     private String genero;
     private String compannia;
 
-    Videojuegos(){//Constructor por Defecto
+    Videojuegos() {//Constructor por Defecto
         this.titulo = "";
         this.horasEstimadas = 10;
         this.entregado = false;
@@ -61,7 +60,7 @@ public class Videojuegos implements Entregable{
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "\n[Titulo: " + this.titulo + "]" +
                 "\n[Horas estimadas: " + this.horasEstimadas + "]" +
                 "\n[Entregado?: " + this.entregado + "]" +
@@ -86,9 +85,9 @@ public class Videojuegos implements Entregable{
 
     @Override
     public boolean compareTo(Object a) {
-        if(a instanceof Videojuegos){
+        if (a instanceof Videojuegos) {
             Videojuegos aComparar = (Videojuegos) a;
-            if(this.horasEstimadas == ( aComparar.horasEstimadas)){
+            if (this.horasEstimadas == (aComparar.horasEstimadas)) {
                 return true;
             }
         }

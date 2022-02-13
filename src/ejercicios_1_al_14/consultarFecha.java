@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.zip.DataFormatException;
 
 public class consultarFecha {
-    public static void consultarFechaHoraActual(){
+    public void consultarFechaHoraActual() {
         LocalDateTime fechaHoraActual = LocalDateTime.now();
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("(yyyy/MM/dd) (HH:mm:ss)");
 

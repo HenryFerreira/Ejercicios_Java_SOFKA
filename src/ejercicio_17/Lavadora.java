@@ -29,7 +29,6 @@ public class Lavadora extends Electrodomestico {
         return precioBase;
     }
 
-
     public float getCarga() {
         return carga;
     }
